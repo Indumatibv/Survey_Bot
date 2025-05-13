@@ -1,0 +1,9 @@
+Python== 3.10.13
+pandas==2.2.3
+numpy==2.2.4
+transformers==4.49.0
+sentence-transformers==3.4.1
+spacy==3.8.4
+torch==2.6.0
+speechrecognition==3.14.1
+scipy==1.15.2
