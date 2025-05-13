@@ -124,9 +124,6 @@ Example fixes:
 
 Oil Consumption: “200 ml” → mapped to "< 250 ml"
 
-Meal Timing: “around seven in the evening” → mapped to "Before 7:00 PM"
-<<<<<<< HEAD
-=======
+Meal Timing: “around seven in the evening” → mapped to "Before 7:00 PM".
 
->>>>>>> d2b6838 (updated_redme_format)
 Achieved higher accuracy by combining model outputs with rule-based mapping and contextual cues.
