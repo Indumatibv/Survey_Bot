@@ -8,13 +8,13 @@ The Survey Bot Proof of Concept (PoC) aims to automate multilingual voice-based 
 
 To evaluate the feasibility of a real-time, multilingual, speech-driven survey bot by integrating:
 
-Voice-based input capture
+Voice-based input capture.
 
-Multilingual transcription and translation
+Multilingual transcription and translation.
 
-Contextual understanding of natural language
+Contextual understanding of natural language.
 
-Structured answer extraction from unstructured speech
+Structured answer extraction from unstructured speech.
 
 Phase 1: Capabilities Demonstrated
 
@@ -30,21 +30,21 @@ Chosen Model:
 
 speech_recognition (Google Web Speech API)
 
-✅ Fast and responsive for live transcription
+✅ Fast and responsive for live transcription.
 
-❌ Whisper by OpenAI was rejected due to latency in real-time use
+❌ Whisper by OpenAI was rejected due to latency in real-time use.
 
 2. Translation
 
-Model Used: IndicTrans2 (ai4bharat/indictrans2-indic-en-1B)
+Model Used: IndicTrans2 (ai4bharat/indictrans2-indic-en-1B).
 
-✅ Accurate Kannada-to-English translation
+✅ Accurate Kannada-to-English translation.
 
-✅ Supports long and colloquial sentences
+✅ Supports long and colloquial sentences.
 
 3. Punctuation Restoration
 
-Library: deepmultilingualpunctuation
+Library: deepmultilingualpunctuation.
 
 Restores punctuation for better structure and readability before feeding into downstream QA models.
 
@@ -52,28 +52,29 @@ Restores punctuation for better structure and readability before feeding into do
 
 Why Not Word Error Rate (WER)?
 
-❌ JiWER lacked contextual understanding
+❌ JiWER lacked contextual understanding.
 
 Chosen Approach:
 
 ✅ sentence-transformers for semantic similarity between generated and reference outputs.
 
 5. Question Answering
+
 Final Model: distilbert-base-cased-distilled-squad
 
-✅ Accurate answer extraction from long, translated responses
+✅ Accurate answer extraction from long, translated responses.
 
-❌ Other models (T5, FLAN, Mistral) were less consistent or resource-heavy
+❌ Other models (T5, FLAN, Mistral) were less consistent or resource-heavy.
 
 6. Custom Enhancements
 
-Vocabulary Mapping: Ensures model responses align with predefined answer options
+Vocabulary Mapping: Ensures model responses align with predefined answer options.
 
-Engineer Intervention Flag: Raised for new questions with unseen options
+Engineer Intervention Flag: Raised for new questions with unseen options.
 
-Keyword Context Detection: Uses SpaCy to validate if relevant context is present
+Keyword Context Detection: Uses SpaCy to validate if relevant context is present.
 
-Text Normalization: Converts textual numbers (e.g., “two”) to numerical equivalents (“2”)
+Text Normalization: Converts textual numbers (e.g., “two”) to numerical equivalents (“2”).
 
 🔄 Example Workflow
 
@@ -101,13 +102,13 @@ Dependency Versions-
 
 The PoC demonstrates a robust pipeline for:
 
-Multilingual voice input handling
+Multilingual voice input handling.
 
-Accurate transcription and translation
+Accurate transcription and translation.
 
-Semantic QA with structured answer mapping
+Semantic QA with structured answer mapping.
 
-Custom rule-based processing for real-world survey logic
+Custom rule-based processing for real-world survey logic.
 
 This lays a strong foundation for a scalable, AI-powered, real-time survey assistant.
 
