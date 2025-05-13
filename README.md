@@ -13,7 +13,7 @@ Multilingual transcription and translation
 Contextual understanding of natural language
 Structured answer extraction from unstructured speech
 
-🧪 Phase 1: Capabilities Demonstrated
+Phase 1: Capabilities Demonstrated
 
 1. Speech Recognition
 Handled Kannada input from:
@@ -68,7 +68,7 @@ Final Answer: "2"
 
 If context is missing (e.g., no mention of “walk”), system returns: “No answer found”
 
-📦 Dependency Versions-
+Dependency Versions-
 
 | Domain            | Libraries / Tools Used                                                                                  |
 | ----------------- | ------------------------------------------------------------------------------------------------------- |
